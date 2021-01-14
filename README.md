@@ -66,8 +66,8 @@ Our sever doesn't have any interface as it's main job is to serve the main appli
 ```
 (venv) $ ngrok http 5000
 ```
-Now, head over to `http://127.0.0.1:4040` where you'll get a unique URL for instance : `http://f35ec255a435.ngrok.io/`. Copy this and paste it at [Twilio Console]
-(https://www.twilio.com/console/sms/whatsapp/sandbox?) where you've to configure your Whatsapp according to the instructions given there.
+Now, head over to `http://127.0.0.1:4040` where you'll get a unique URL for instance : `http://f35ec255a435.ngrok.io/`. Copy this and paste it at (Twilio Console)
+[https://www.twilio.com/console/sms/whatsapp/sandbox?] where you've to configure your Whatsapp according to the instructions given there.
 
 Now that our flask app on the server is running and also our Ngrok. All set! Open up your Whatsapp and get started!
 
