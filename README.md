@@ -35,6 +35,7 @@ Next, we need to install the project dependencies, which are listed in `requirem
 (venv) $ pip install -r requirements.txt
 ```
 **Step 3: Update environment variables and run the Server.**
+
 Create a new file named `.env`and update it with the following Spotify credentials
 ```
 # .env file
@@ -50,7 +51,9 @@ FLASK_APP_SECRET="<FLASK_APP_SECRET>"
 ```
 
 If you don't prefer having a `.env` file, you can export each credential one by one using below:
+
 **(venv) $**` export CREDENTAIL_NAME = <CREDENTIAL_VALUE>`
 
 Now we're ready to start our server which is as simple as:
+
 **(venv) $**` python twilio_jukebox.py`
