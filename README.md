@@ -61,4 +61,40 @@ Now we're ready to start our server which is as simple as:
 ```
 (venv) $ python twilio_jukebox.py
 ```
+Our sever doesn't have any interface as it's main job is to serve the main application script. So, let's just run this flask application besides which we'll be using `Ngrok` to connect the Flask application running on our system to a public URL that Twilio can connect to. Run the below command :
+
+```
+(venv) $ ngrok http 5000
+```
+Now, head over to `http://127.0.0.1:4040` where you'll get a unique URL for instance : `http://f35ec255a435.ngrok.io/`. Copy this and paste it at [Twilio Console]
+(https://www.twilio.com/console/sms/whatsapp/sandbox?) where you've to configure your Whatsapp according to the instructions given there.
+
+Now that our flask app on the server is running and also our Ngrok. All set! Open up your Whatsapp and get started!
+
+### Early Preview
+
+- Initiating the Chatbot.
+<p align="center">
+  <img src="https://i.ibb.co/sbZgMFM/screely-1610615168366.png" title="Home"/>
+</p>
+
+- Asks about Song / Artist/ Album.
+<p align="center">
+  <img src="https://i.ibb.co/F4qBwHF/screely-1610615268554.png" title="Profile"/>
+</p>
+
+- Provides options for various songs to select among from.
+<p align="center">
+  <img src="https://i.ibb.co/h97xY16/screely-1610615368461.png" title="Create a Class"/>
+</p>
+
+- Confirms that the song has been added.
+<p align="center">
+  <img src="https://i.ibb.co/ZHn4gc7/screely-1610615504510.png" title="Create a Class"/>
+</p>
+
+- Indicates the song has been added to our spotify playlist
+<p align="center">
+  <img src="https://i.ibb.co/55mf01g/screely-1610615581928.png" title="Create a Class"/>
+</p>
 
